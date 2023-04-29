@@ -1,4 +1,3 @@
-var name:String? = null
 var greeting:String? = null
 
 fun main() {
@@ -6,6 +5,8 @@ fun main() {
 
     //Printing greeting based on its value with if statements;
     println(if(greeting == null) "Greeting is null" else greeting)
+
+    greeting = "Hello there!"
     //The same thing but with when;
     when(greeting) {
         null -> println("Greeting is null")
