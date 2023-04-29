@@ -3,7 +3,12 @@ var greeting:String? = null
 
 fun main() {
     println("Hello")
-    greeting = (if(name != null) "Welcome $name" else "I'm sorry, you're name is not specified :(")
 
-    println(greeting)
+    //Printing greeting based on its value with if statements;
+    println(if(greeting == null) "Greeting is null" else greeting)
+    //The same thing but with when;
+    when(greeting) {
+        null -> println("Greeting is null")
+        else -> println(greeting)
+    }
 }
