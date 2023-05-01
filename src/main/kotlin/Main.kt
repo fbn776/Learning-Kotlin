@@ -1,15 +1,21 @@
-var greeting:String? = null
+fun sum(vararg nums: Int): Int {
+    var result = 0;
+    nums.forEach { i ->
+        result += i
+    }
+
+    return result
+}
+
+fun sayHello(msg:String = "Hello", vararg names: String) {
+    names.forEach{i ->
+        println("$msg $i")
+    }
+}
 
 fun main() {
-    println("Hello")
+    val person = Person("Febin", "Nelson P")
+    person.age = 19
 
-    //Printing greeting based on its value with if statements;
-    println(if(greeting == null) "Greeting is null" else greeting)
-
-    greeting = "Hello there!"
-    //The same thing but with when;
-    when(greeting) {
-        null -> println("Greeting is null")
-        else -> println(greeting)
-    }
+    person.printInfo()
 }
