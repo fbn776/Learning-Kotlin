@@ -1,5 +1,5 @@
 fun sum(vararg nums: Int): Int {
-    var result = 0;
+    var result = 0
     nums.forEach { i ->
         result += i
     }
