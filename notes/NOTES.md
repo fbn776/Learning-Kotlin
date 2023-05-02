@@ -1,7 +1,7 @@
 # NOTES
 These are the important notes to remember.
 
-## Infix fucntions
+## Infix functions
 Infix functions are a special type of function in Kotlin that can be called with infix notation, which allows the function call to be written without using parentheses or the dot notation.
 eg:
 ```kotlin
