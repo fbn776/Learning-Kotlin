@@ -10,32 +10,14 @@ ref:
     https://kotlinlang.org/docs/operator-overloading.html
  */
 
-operator fun String.div(a: Int): List<String> {
-    if(a > this.length) {
-        throw Error("Cannot divide a string with a number thats greater than its length")
-    }
-
-    if(a <= 0) {
-        throw Error("Cannot divide a string with a number thats less than or equal to 0")
-    }
-
-    val list = mutableListOf<String>()
-    val u: Int = this.length/a
-
-    println(this.length)
-    for(i in 0..a-1) {
-        var r = ""
-        for(j in i*u..((i+1)*u)-1) {
-            r += this[j]
-        }
-        list.add(r)
-    }
-
-
-    return list
+/*
+A repeater function that repeats a string `a` times;
+ */
+operator fun String.times(a: Int): String {
+    return this.repeat(a)
 }
 
 fun main() {
-    val divs = "Hello there!" / 0
-    println(divs)
+    val s = "123" * 5
+    println(s)
 }
