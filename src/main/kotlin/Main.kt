@@ -1,5 +1,5 @@
 //main() is the entry point a Kotlin program.
 fun main() {
-  println("Hello Kotlin :)")
-  
+  val name = "Kotlin"
+  println("Hello $name :)")
 }
