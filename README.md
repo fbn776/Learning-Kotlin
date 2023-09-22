@@ -1,4 +1,4 @@
-# HelloKotlin
+# Learning Kotlin
 
 ```kotlin
 fun main() {
